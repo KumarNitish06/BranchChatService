@@ -18,9 +18,13 @@ Workflow:
 
 
 Note: 1. The Db has foriegn key constraint enabled. You need to register agent before using it.
+
 2. LoadChat api loads the chat in sorted order of their timestamp. 
+
 3. Didn't use lombok as it requires db side setup.
+
 4. Date provided in the csv is already loaded.
+
 5. Connect to h2 database using link. http://localhost:8080/h2
 		JDBC Url: jdbc:h2:mem:testdb
 		Username: sa
